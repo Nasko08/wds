@@ -50,7 +50,7 @@ st.markdown(
         border: 1px solid #1f2933;
         padding: 1.2rem;
         border-radius: 1.2rem;
-        color: #f3f4f6; /* 👈 FIX: force normal readable text */
+        color: #f3f4f6;
     }
 
     /* Card text */
@@ -78,8 +78,6 @@ st.markdown(
     </style>
     """,
     unsafe_allow_html=True
-)
-
 )
 
 # ==================================================================================================
