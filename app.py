@@ -25,18 +25,61 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    body {background-color: #020617;}
-    .title {font-size: 3.2rem; font-weight: 900; color: #e5e7eb;}
-    .subtitle {color: #9ca3af; font-size: 1.1rem; margin-bottom: 1rem;}
-    .panel {background: #020617; border: 1px solid #1f2933; padding: 1.2rem; border-radius: 1.2rem;}
-    .card {background: #020617; border: 1px solid #1f2933; padding: 1rem; border-radius: 1rem; margin-bottom: 1rem;}
-    .good {color: #22c55e; font-weight: 700;}
-    .warn {color: #facc15; font-weight: 700;}
-    .bad {color: #ef4444; font-weight: 700;}
-    .stat {font-size: 1.3rem; font-weight: 800;}
+    /* Global */
+    body {
+        background-color: #020617;
+        color: #e5e7eb;
+    }
+
+    /* Titles */
+    .title {
+        font-size: 3.2rem;
+        font-weight: 900;
+        color: #f9fafb;
+    }
+
+    .subtitle {
+        color: #d1d5db;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Panels & cards */
+    .panel, .card {
+        background: #020617;
+        border: 1px solid #1f2933;
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+        color: #f3f4f6; /* 👈 FIX: force normal readable text */
+    }
+
+    /* Card text */
+    .card h4 {
+        color: #f9fafb;
+        font-weight: 700;
+    }
+
+    .card p {
+        color: #e5e7eb;
+        margin: 0.2rem 0;
+    }
+
+    /* Status colors */
+    .good { color: #22c55e; font-weight: 700; }
+    .warn { color: #facc15; font-weight: 700; }
+    .bad  { color: #ef4444; font-weight: 700; }
+
+    /* Metrics */
+    .stat {
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: #f9fafb;
+    }
     </style>
     """,
     unsafe_allow_html=True
+)
+
 )
 
 # ==================================================================================================
